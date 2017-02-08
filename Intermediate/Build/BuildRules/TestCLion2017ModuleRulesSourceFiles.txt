@@ -1,0 +1,4 @@
+C:\UnrealProjects\TestCLion2017\Source\TestCLion2017\TestCLion2017.Build.cs
+C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\CLionSourceCodeAccess.Build.cs
+C:\UnrealProjects\TestCLion2017\Source\TestCLion2017.Target.cs
+C:\UnrealProjects\TestCLion2017\Source\TestCLion2017Editor.Target.cs

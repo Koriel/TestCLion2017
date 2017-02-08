@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="TestCLion2017">
+  <File Name="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" />
+  <VirtualDirectory Name="\Source">
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017.Target.cs" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017Editor.Target.cs" />
+  </VirtualDirectory>
+  <VirtualDirectory Name="\Config">
+    <File Name="C:\UnrealProjects\TestCLion2017\Config\DefaultEditor.ini" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Config\DefaultEditorPerProjectUserSettings.ini" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Config\DefaultEditorUserSettings.ini" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Config\DefaultEngine.ini" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Config\DefaultGame.ini" />
+  </VirtualDirectory>
+  <VirtualDirectory Name="\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess">
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\CLionSourceCodeAccess.Build.cs" />
+  </VirtualDirectory>
+  <VirtualDirectory Name="\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private">
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSettings.cpp" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSettings.h" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSourceCodeAccessModule.cpp" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSourceCodeAccessModule.h" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSourceCodeAccessor.cpp" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSourceCodeAccessor.h" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Plugins\CLionSourceCodeAccess\Source\CLionSourceCodeAccess\Private\CLionSourceCodeAccessPrivatePCH.h" />
+  </VirtualDirectory>
+  <VirtualDirectory Name="\Source\TestCLion2017">
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017\TestCLion2017.Build.cs" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017\TestCLion2017.cpp" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017\TestCLion2017.h" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017\TestCLion2017GameModeBase.cpp" />
+    <File Name="C:\UnrealProjects\TestCLion2017\Source\TestCLion2017\TestCLion2017GameModeBase.h" />
+  </VirtualDirectory>
+  <Settings>
+    <Settings />
+    <Configuration Name="DebugGame">
+      <General CommandArguments=" -debug" WorkingDirectory="C:\UnrealProjects\TestCLion2017\Binaries\Win64" Command="TestCLion2017-Win64-DebugGame.exe" />
+      <General CommandArguments=" -debug" WorkingDirectory="C:\UnrealProjects\TestCLion2017\Binaries\Win64" Command="TestCLion2017-Win64-DebugGame.exe" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>C:\Program Files (x86)\Epic Games\4.14\Engine\Binaries\DotNET</WorkingDirectory>
+        <BuildCommand>UnrealBuildTool.exe TestCLion2017 Win64 DebugGame -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject"</BuildCommand>
+        <CleanCommand>UnrealBuildTool.exe TestCLion2017 Win64 DebugGame -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -clean</CleanCommand>
+        <RebuildCommand>UnrealBuildTool.exe TestCLion2017 Win64 DebugGame -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -clean
+UnrealBuildTool.exe TestCLion2017 Win64 DebugGame -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="C:\UnrealProjects\TestCLion2017\Binaries\Win64" Command="TestCLion2017.exe" />
+      <General WorkingDirectory="C:\UnrealProjects\TestCLion2017\Binaries\Win64" Command="TestCLion2017.exe" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>C:\Program Files (x86)\Epic Games\4.14\Engine\Binaries\DotNET</WorkingDirectory>
+        <BuildCommand>UnrealBuildTool.exe TestCLion2017 Win64 Development -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject"</BuildCommand>
+        <CleanCommand>UnrealBuildTool.exe TestCLion2017 Win64 Development -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -clean</CleanCommand>
+        <RebuildCommand>UnrealBuildTool.exe TestCLion2017 Win64 Development -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -clean
+UnrealBuildTool.exe TestCLion2017 Win64 Development -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="C:\UnrealProjects\TestCLion2017\Binaries\Win64" Command="TestCLion2017-Win64-Shipping.exe" />
+      <General WorkingDirectory="C:\UnrealProjects\TestCLion2017\Binaries\Win64" Command="TestCLion2017-Win64-Shipping.exe" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>C:\Program Files (x86)\Epic Games\4.14\Engine\Binaries\DotNET</WorkingDirectory>
+        <BuildCommand>UnrealBuildTool.exe TestCLion2017 Win64 Shipping -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject"</BuildCommand>
+        <CleanCommand>UnrealBuildTool.exe TestCLion2017 Win64 Shipping -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -clean</CleanCommand>
+        <RebuildCommand>UnrealBuildTool.exe TestCLion2017 Win64 Shipping -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -clean
+UnrealBuildTool.exe TestCLion2017 Win64 Shipping -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="C:\UnrealProjects\TestCLion2017\TestCLion2017.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Win64 -targetplatform=Win64 -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+</CodeLite_Project>

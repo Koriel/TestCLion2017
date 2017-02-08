@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\TestCLion2017.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{A9E3433D-D61C-450B-B8FB-EBED7DC0606A}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TestCLion2017.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\TestCLion2017Editor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{703015EA-8B4E-4736-8349-0E775D8D0A15}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\TestCLion2017">
+			<UniqueIdentifier>{92FAA6AF-8B30-4C8D-9FBF-590BF1E2936D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TestCLion2017\TestCLion2017.Build.cs">
+			<Filter>Source\TestCLion2017</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\TestCLion2017\TestCLion2017.cpp">
+			<Filter>Source\TestCLion2017</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TestCLion2017\TestCLion2017.h">
+			<Filter>Source\TestCLion2017</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\TestCLion2017\TestCLion2017GameModeBase.cpp">
+			<Filter>Source\TestCLion2017</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TestCLion2017\TestCLion2017GameModeBase.h">
+			<Filter>Source\TestCLion2017</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
